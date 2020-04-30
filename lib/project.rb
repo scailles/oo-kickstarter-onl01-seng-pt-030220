@@ -12,6 +12,7 @@ class Project
     @backers << backer
     if !(Backers.backed_projects.include?(self))
       Backers.backed_projects << self
+    else nil
   end
   
 end
